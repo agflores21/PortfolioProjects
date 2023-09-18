@@ -120,26 +120,6 @@ SET SoldAsVacant = (
 
 -- Remove Duplicates 
 
-
--- Azure Data Studio Query 
-/*WITH RowNumCTE AS(
-SELECT *, 
-    ROW_NUMBER() OVER ( 
-    PARTITION BY ParcelID, 
-        PropertyAddress, 
-        SalePrice, 
-        SaleDate, 
-        LegalReference
-        ORDER BY UniqueID
-        ) RowNum
-FROM [NashvilleHousing]
--- ORDER BY ParcelID
-)
-DELETE 
-FROM RowNumCTE
-WHERE RowNum > 1
-*/
-
 DELETE 
 FROM [NashvilleHousing]
 WHERE UniqueID NOT IN (
@@ -170,12 +150,6 @@ WHERE UniqueID NOT IN (
 SELECT * 
 FROM [NashvilleHousing]
 
--- Azure Studio Query
-ALTER TABLE [NashvilleHousing]
-DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
-
-
--- SQLite Studio Query 
 CREATE TABLE [NashvilleHousing_New] AS
 SELECT UniqueID,
 ParcelID,
