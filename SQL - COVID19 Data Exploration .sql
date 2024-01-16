@@ -1,4 +1,9 @@
 /* Covid 19 Data Exploration 
+
+In this SQL project, I've conducted data exploration and analysis using various SQL techniques and functions on two related tables: 
+CovidDeaths and CovidVaccinations. These SQL queries and operations are aimed at providing insights into COVID-19 data, particularly 
+focusing on infection rates, death rates, and vaccination progress. 
+
 Skills Used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
 */ 
 
