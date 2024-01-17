@@ -1,4 +1,9 @@
-/* Data Cleaning in SQL Queries */
+/* Data Cleaning in SQL Queries 
+
+I transformed raw Housing data in SQL to make it usable for analysis.
+
+Skills Used: Substrings, Alter, Update, Removed Duplicates, Deleted Unused Columns and Replaced Values
+*/
 
 SELECT *
 FROM [NashvilleHousing] 
