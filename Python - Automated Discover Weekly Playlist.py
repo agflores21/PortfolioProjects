@@ -1,3 +1,5 @@
+#This project automates saving the Discover Weekly playlist using the Spotify API.
+
 import spotipy
 import time
 from spotipy.oauth2 import SpotifyOAuth
