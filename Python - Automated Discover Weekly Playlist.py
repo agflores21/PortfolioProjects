@@ -9,7 +9,7 @@ from flask import Flask, request, url_for, session, redirect
 app = Flask(__name__)
 
 app.config['Session_Cookie_Name'] = 'Spotify Cookie'
-app.secret_key = 'euirg531262!#$FSAA#'
+app.secret_key = 'Your Secret Key'
 TOKEN_INFO = 'token_info'
 
 @app.route('/')
